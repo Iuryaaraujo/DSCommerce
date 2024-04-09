@@ -13,6 +13,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Column(unique = true) // Definindo que o EMAIL NÂO se repita, é Único
     private String email;
     private String phone;
     private LocalDate birthDate;
