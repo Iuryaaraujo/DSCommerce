@@ -22,7 +22,7 @@ public class Order {
     private OrderStatus status;
 
     @ManyToOne
-    @JoinColumn(name = "client_id")
+    @JoinColumn(name = "client_id") //JoinColumn Junção de Tabela
     private User client;
 
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)

@@ -6,12 +6,12 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-@Entity
-@Table(name = "tb_category")
+@Entity // Mapea as class para o BD
+@Table(name = "tb_category") // Nome da Tabela
 public class Category {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // chave primaria PK
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-Incremente
     private Long id;
     private String name;
 

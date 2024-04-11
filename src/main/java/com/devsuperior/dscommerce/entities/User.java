@@ -16,13 +16,13 @@ public class User {
     private Long id;
     private String name;
 
-    @Column(unique = true)
+    @Column(unique = true) // email unico
     private String email;
     private String phone;
     private LocalDate birthDate;
     private String password;
 
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client") //OneToMany é onde sempre fica a list<>
     private List<Order> orders = new ArrayList<>();
 
     public User() {
