@@ -21,6 +21,7 @@ public class ProductDTO {
         this.price = price;
         this.imgUrl = imgUrl;
     }
+    //como copia dados da entity para DTO pelo o construtor
     public ProductDTO(Product entity) {
         id = entity.getId();
         name = entity.getName();
